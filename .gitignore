@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Data and Artifacts
+data/processed/*.pt
+data/processed/*.parquet
+data/processed/*.npy
+models/checkpoints/
+mlruns/
+.dvc/cache/
+.dvc/tmp/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.lnk
+*.log
+algae.mat
+
+# Root duplicate raw data files (already preserved in data/raw/)
+*_FD00*.txt
+
+# Secrets & Local Configs
+.env
+.env.local
+

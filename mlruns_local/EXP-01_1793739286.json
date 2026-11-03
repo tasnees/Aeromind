@@ -1,0 +1,45 @@
+{
+  "run_id": "EXP-01_1793739286",
+  "run_name": "EXP-01",
+  "start_time": "2026-11-03T21:54:46Z",
+  "params": {
+    "exp_id": "EXP-01",
+    "architecture": "LSTM",
+    "dataset": "FD001",
+    "window_size": 30,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "epochs": 10,
+    "feature_dim": 15
+  },
+  "metrics": {
+    "test_mae": [
+      {
+        "step": null,
+        "value": 9.9992
+      }
+    ],
+    "test_rmse": [
+      {
+        "step": null,
+        "value": 13.5443
+      }
+    ],
+    "test_nasa_score": [
+      {
+        "step": null,
+        "value": 337.31
+      }
+    ],
+    "test_loss": [
+      {
+        "step": null,
+        "value": 9.5072
+      }
+    ]
+  },
+  "artifacts": [
+    "models\\checkpoints\\EXP-01_LSTM_best.pth"
+  ],
+  "end_time": "2026-11-03T21:56:47Z"
+}

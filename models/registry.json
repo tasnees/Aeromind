@@ -1,0 +1,32 @@
+{
+  "model_name": "AeroMind-RUL-Model",
+  "versions": {
+    "1": {
+      "version": 1,
+      "architecture": "LSTM",
+      "checkpoint_path": "models\\checkpoints\\EXP-01_LSTM_best.pth",
+      "metrics": {
+        "mae": 9.9992,
+        "rmse": 13.5443,
+        "nasa_score": 337.31,
+        "loss": 9.5072
+      },
+      "hyperparameters": {
+        "exp_id": "EXP-01",
+        "architecture": "LSTM",
+        "dataset": "FD001",
+        "window_size": 30,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "epochs": 10,
+        "feature_dim": 15
+      },
+      "status": "champion",
+      "registered_at": "2026-11-03T21:56:47Z"
+    }
+  },
+  "aliases": {
+    "latest": 1,
+    "champion": 1
+  }
+}

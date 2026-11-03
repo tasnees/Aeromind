@@ -1,0 +1,27 @@
+{
+  "dataset_name": "FD001",
+  "train_validation": {
+    "dataset_name": "FD001_train",
+    "total_rows": 20631,
+    "num_columns": 26,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "unique_engines": 100,
+    "min_cycle": 1,
+    "max_cycle": 362,
+    "passed": true,
+    "errors": []
+  },
+  "test_validation": {
+    "dataset_name": "FD001_test",
+    "total_rows": 13096,
+    "num_columns": 26,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "unique_engines": 100,
+    "min_cycle": 1,
+    "max_cycle": 303,
+    "passed": true,
+    "errors": []
+  }
+}

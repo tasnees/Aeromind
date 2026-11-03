@@ -1,0 +1,1907 @@
+[
+  {
+    "id": "TECH_001",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of C-MAPSS dataset origin (reference 1).",
+    "expected_answer_keywords": [
+      "C-MAPSS",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_002",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of C-MAPSS dataset origin (reference 2).",
+    "expected_answer_keywords": [
+      "C-MAPSS",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_003",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of C-MAPSS dataset origin (reference 3).",
+    "expected_answer_keywords": [
+      "C-MAPSS",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_004",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of C-MAPSS dataset origin (reference 4).",
+    "expected_answer_keywords": [
+      "C-MAPSS",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_005",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of C-MAPSS dataset origin (reference 5).",
+    "expected_answer_keywords": [
+      "C-MAPSS",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_006",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of C-MAPSS dataset origin (reference 6).",
+    "expected_answer_keywords": [
+      "C-MAPSS",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_007",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of FD001 operating conditions (reference 1).",
+    "expected_answer_keywords": [
+      "FD001",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_008",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of FD001 operating conditions (reference 2).",
+    "expected_answer_keywords": [
+      "FD001",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_009",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of FD001 operating conditions (reference 3).",
+    "expected_answer_keywords": [
+      "FD001",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_010",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of FD001 operating conditions (reference 4).",
+    "expected_answer_keywords": [
+      "FD001",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_011",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of FD001 operating conditions (reference 5).",
+    "expected_answer_keywords": [
+      "FD001",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_012",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of FD001 operating conditions (reference 6).",
+    "expected_answer_keywords": [
+      "FD001",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_013",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of FD004 operating conditions (reference 1).",
+    "expected_answer_keywords": [
+      "FD004",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_014",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of FD004 operating conditions (reference 2).",
+    "expected_answer_keywords": [
+      "FD004",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_015",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of FD004 operating conditions (reference 3).",
+    "expected_answer_keywords": [
+      "FD004",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_016",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of FD004 operating conditions (reference 4).",
+    "expected_answer_keywords": [
+      "FD004",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_017",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of FD004 operating conditions (reference 5).",
+    "expected_answer_keywords": [
+      "FD004",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_018",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of FD004 operating conditions (reference 6).",
+    "expected_answer_keywords": [
+      "FD004",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_019",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of High Pressure Compressor fault indicator (reference 1).",
+    "expected_answer_keywords": [
+      "High",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_020",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of High Pressure Compressor fault indicator (reference 2).",
+    "expected_answer_keywords": [
+      "High",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_021",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of High Pressure Compressor fault indicator (reference 3).",
+    "expected_answer_keywords": [
+      "High",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_022",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of High Pressure Compressor fault indicator (reference 4).",
+    "expected_answer_keywords": [
+      "High",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_023",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of High Pressure Compressor fault indicator (reference 5).",
+    "expected_answer_keywords": [
+      "High",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_024",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of High Pressure Compressor fault indicator (reference 6).",
+    "expected_answer_keywords": [
+      "High",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_025",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of Asymmetric NASA score penalty (reference 1).",
+    "expected_answer_keywords": [
+      "Asymmetric",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_026",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of Asymmetric NASA score penalty (reference 2).",
+    "expected_answer_keywords": [
+      "Asymmetric",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_027",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of Asymmetric NASA score penalty (reference 3).",
+    "expected_answer_keywords": [
+      "Asymmetric",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_028",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of Asymmetric NASA score penalty (reference 4).",
+    "expected_answer_keywords": [
+      "Asymmetric",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_029",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of Asymmetric NASA score penalty (reference 5).",
+    "expected_answer_keywords": [
+      "Asymmetric",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "TECH_030",
+    "category": "technical_knowledge",
+    "query": "Explain the engineering significance of Asymmetric NASA score penalty (reference 6).",
+    "expected_answer_keywords": [
+      "Asymmetric",
+      "C-MAPSS",
+      "turbofan"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_001",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 1 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_002",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 2 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_003",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 3 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_004",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 4 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_005",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 5 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_006",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 6 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_007",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 7 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_008",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 8 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_009",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 9 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_010",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 10 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_011",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 11 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_012",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 12 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_013",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 13 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_014",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 14 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_015",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 15 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_016",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 16 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_017",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 17 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_018",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 18 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_019",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 19 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_020",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 20 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_021",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 21 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_022",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 22 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_023",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 23 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_024",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 24 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_025",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 25 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_026",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 26 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_027",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 27 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_028",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 28 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_029",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 29 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "PRED_030",
+    "category": "prediction_interpretation",
+    "query": "Explain why engine 30 has its current RUL and what degradation stage it is in.",
+    "expected_answer_keywords": [
+      "RUL",
+      "cycles",
+      "degradation",
+      "confidence interval"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_001",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_11 (Ps30) and sensor_4 (T50) trends for engine 1.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_002",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_11 (Ps30) and sensor_4 (T50) trends for engine 2.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_003",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_11 (Ps30) and sensor_4 (T50) trends for engine 3.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_004",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_11 (Ps30) and sensor_4 (T50) trends for engine 4.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_005",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_11 (Ps30) and sensor_4 (T50) trends for engine 5.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_006",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_11 (Ps30) and sensor_4 (T50) trends for engine 6.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_007",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_11 (Ps30) and sensor_4 (T50) trends for engine 7.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_008",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_11 (Ps30) and sensor_4 (T50) trends for engine 8.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_009",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_11 (Ps30) and sensor_4 (T50) trends for engine 9.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_010",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_11 (Ps30) and sensor_4 (T50) trends for engine 10.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_011",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_9 (Nc) and sensor_12 (phi) trends for engine 1.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_012",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_9 (Nc) and sensor_12 (phi) trends for engine 2.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_013",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_9 (Nc) and sensor_12 (phi) trends for engine 3.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_014",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_9 (Nc) and sensor_12 (phi) trends for engine 4.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_015",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_9 (Nc) and sensor_12 (phi) trends for engine 5.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_016",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_9 (Nc) and sensor_12 (phi) trends for engine 6.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_017",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_9 (Nc) and sensor_12 (phi) trends for engine 7.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_018",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_9 (Nc) and sensor_12 (phi) trends for engine 8.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_019",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_9 (Nc) and sensor_12 (phi) trends for engine 9.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_020",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_9 (Nc) and sensor_12 (phi) trends for engine 10.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_021",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_14 (Nrc) and sensor_15 (BPR) trends for engine 1.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_022",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_14 (Nrc) and sensor_15 (BPR) trends for engine 2.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_023",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_14 (Nrc) and sensor_15 (BPR) trends for engine 3.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_024",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_14 (Nrc) and sensor_15 (BPR) trends for engine 4.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_025",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_14 (Nrc) and sensor_15 (BPR) trends for engine 5.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_026",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_14 (Nrc) and sensor_15 (BPR) trends for engine 6.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_027",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_14 (Nrc) and sensor_15 (BPR) trends for engine 7.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_028",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_14 (Nrc) and sensor_15 (BPR) trends for engine 8.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_029",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_14 (Nrc) and sensor_15 (BPR) trends for engine 9.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "SENSOR_030",
+    "category": "sensor_analysis",
+    "query": "Compare sensor_14 (Nrc) and sensor_15 (BPR) trends for engine 10.",
+    "expected_answer_keywords": [
+      "trend",
+      "sensor",
+      "increasing",
+      "decreasing"
+    ],
+    "expected_document": "cmapss_spec_001",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_001",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 1 with engine 11 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_002",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 2 with engine 12 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_003",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 3 with engine 13 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_004",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 4 with engine 14 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_005",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 5 with engine 15 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_006",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 6 with engine 16 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_007",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 7 with engine 17 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_008",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 8 with engine 18 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_009",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 9 with engine 19 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_010",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 10 with engine 20 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_011",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 11 with engine 21 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_012",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 12 with engine 22 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_013",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 13 with engine 23 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_014",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 14 with engine 24 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_015",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 15 with engine 25 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_016",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 16 with engine 26 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_017",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 17 with engine 27 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_018",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 18 with engine 28 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_019",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 19 with engine 29 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_020",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 20 with engine 30 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_021",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 21 with engine 31 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_022",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 22 with engine 32 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_023",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 23 with engine 33 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_024",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 24 with engine 34 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "REASON_025",
+    "category": "multi_step_reasoning",
+    "query": "Compare the health of engine 25 with engine 35 and determine which engine should be overhauled first.",
+    "expected_answer_keywords": [
+      "engine",
+      "RUL",
+      "overhaul",
+      "urgency"
+    ],
+    "expected_document": "maintenance_proc_042",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_001",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What are the inspection requirements when RUL falls below 30 cycles?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_002",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What are the inspection requirements when RUL falls below 30 cycles?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_003",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What are the inspection requirements when RUL falls below 30 cycles?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_004",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What are the inspection requirements when RUL falls below 30 cycles?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_005",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What are the inspection requirements when RUL falls below 30 cycles?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_006",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: How is damage propagation modeled in turbofan high pressure compressors?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_007",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: How is damage propagation modeled in turbofan high pressure compressors?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_008",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: How is damage propagation modeled in turbofan high pressure compressors?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_009",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: How is damage propagation modeled in turbofan high pressure compressors?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_010",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: How is damage propagation modeled in turbofan high pressure compressors?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_011",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What are the six operating condition dimensions in C-MAPSS FD002 and FD004?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_012",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What are the six operating condition dimensions in C-MAPSS FD002 and FD004?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_013",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What are the six operating condition dimensions in C-MAPSS FD002 and FD004?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_014",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What are the six operating condition dimensions in C-MAPSS FD002 and FD004?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_015",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What are the six operating condition dimensions in C-MAPSS FD002 and FD004?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_016",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What is the mathematical definition of the C-MAPSS scoring function?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_017",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What is the mathematical definition of the C-MAPSS scoring function?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_018",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What is the mathematical definition of the C-MAPSS scoring function?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_019",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What is the mathematical definition of the C-MAPSS scoring function?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "RETRIEVE_020",
+    "category": "document_retrieval",
+    "query": "Find technical documentation: What is the mathematical definition of the C-MAPSS scoring function?",
+    "expected_answer_keywords": [
+      "inspection",
+      "cycles",
+      "damage",
+      "model"
+    ],
+    "expected_document": "saxena_2008_damage_propagation",
+    "should_abstain": false
+  },
+  {
+    "id": "ABSTAIN_001",
+    "category": "unsupported_questions",
+    "query": "What is the current stock price of Boeing?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_002",
+    "category": "unsupported_questions",
+    "query": "What is the current stock price of Boeing?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_003",
+    "category": "unsupported_questions",
+    "query": "What is the current stock price of Boeing?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_004",
+    "category": "unsupported_questions",
+    "query": "Can you recommend a recipe for chocolate cake?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_005",
+    "category": "unsupported_questions",
+    "query": "Can you recommend a recipe for chocolate cake?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_006",
+    "category": "unsupported_questions",
+    "query": "Can you recommend a recipe for chocolate cake?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_007",
+    "category": "unsupported_questions",
+    "query": "What will the weather in Paris be next Tuesday?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_008",
+    "category": "unsupported_questions",
+    "query": "What will the weather in Paris be next Tuesday?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_009",
+    "category": "unsupported_questions",
+    "query": "What will the weather in Paris be next Tuesday?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_010",
+    "category": "unsupported_questions",
+    "query": "Who won the 2024 FIFA World Cup?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_011",
+    "category": "unsupported_questions",
+    "query": "Who won the 2024 FIFA World Cup?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_012",
+    "category": "unsupported_questions",
+    "query": "Who won the 2024 FIFA World Cup?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_013",
+    "category": "unsupported_questions",
+    "query": "How do I invest in Bitcoin cryptocurrency?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_014",
+    "category": "unsupported_questions",
+    "query": "How do I invest in Bitcoin cryptocurrency?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  },
+  {
+    "id": "ABSTAIN_015",
+    "category": "unsupported_questions",
+    "query": "How do I invest in Bitcoin cryptocurrency?",
+    "expected_answer_keywords": [
+      "abstain",
+      "exclusively",
+      "cannot assist"
+    ],
+    "expected_document": null,
+    "should_abstain": true
+  }
+]

@@ -1,0 +1,30 @@
+name: LLM Quality Gate & Regression Evaluation
+
+on:
+  push:
+    paths:
+      - 'aeromind/agent/**'
+      - 'aeromind/rag/**'
+      - 'aeromind/llmops/**'
+  workflow_dispatch:
+
+jobs:
+  evaluate-llm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run LLMOps evaluation suite & gate check
+        run: |
+          python -m aeromind.llmops.evaluation

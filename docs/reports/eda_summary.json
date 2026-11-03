@@ -1,0 +1,113 @@
+{
+  "FD001": {
+    "num_engines": 100,
+    "total_cycles": 20631,
+    "min_engine_life": 128,
+    "max_engine_life": 362,
+    "mean_engine_life": 206.31,
+    "invariant_sensors": [
+      "sensor_1",
+      "sensor_5",
+      "sensor_10",
+      "sensor_16",
+      "sensor_18",
+      "sensor_19"
+    ],
+    "informative_sensors_count": 15,
+    "top_degradation_sensors": [
+      [
+        "sensor_11",
+        -0.7752
+      ],
+      [
+        "sensor_4",
+        -0.7572
+      ],
+      [
+        "sensor_12",
+        0.7489
+      ],
+      [
+        "sensor_7",
+        0.733
+      ],
+      [
+        "sensor_15",
+        -0.7209
+      ],
+      [
+        "sensor_21",
+        0.7073
+      ]
+    ],
+    "settings_summary": {
+      "setting_1": {
+        "unique_values": 158,
+        "min": -0.0087,
+        "max": 0.0087
+      },
+      "setting_2": {
+        "unique_values": 13,
+        "min": -0.0006,
+        "max": 0.0006
+      },
+      "setting_3": {
+        "unique_values": 1,
+        "min": 100.0,
+        "max": 100.0
+      }
+    }
+  },
+  "FD004": {
+    "num_engines": 249,
+    "total_cycles": 61249,
+    "min_engine_life": 128,
+    "max_engine_life": 543,
+    "mean_engine_life": 245.98,
+    "invariant_sensors": [],
+    "informative_sensors_count": 21,
+    "top_degradation_sensors": [
+      [
+        "sensor_14",
+        -0.1017
+      ],
+      [
+        "sensor_16",
+        -0.0796
+      ],
+      [
+        "sensor_11",
+        -0.0684
+      ],
+      [
+        "sensor_4",
+        -0.0555
+      ],
+      [
+        "sensor_3",
+        -0.0413
+      ],
+      [
+        "sensor_17",
+        -0.0412
+      ]
+    ],
+    "settings_summary": {
+      "setting_1": {
+        "unique_values": 536,
+        "min": 0.0,
+        "max": 42.008
+      },
+      "setting_2": {
+        "unique_values": 105,
+        "min": 0.0,
+        "max": 0.842
+      },
+      "setting_3": {
+        "unique_values": 2,
+        "min": 60.0,
+        "max": 100.0
+      }
+    }
+  }
+}
