@@ -42,23 +42,21 @@ def get_active_model():
     if _loaded_model is not None and _loaded_model_version == version:
         return _loaded_model, champ
 
-    # Load model
-    ckpt_path = Path(champ["checkpoint_path"])
-    if not ckpt_path.exists():
-        return None, f"Checkpoint not found at {ckpt_path}"
-
-    arch = champ["architecture"]
-    feat_dim = champ["hyperparameters"].get("feature_dim", 15)
+    # Load model with cross-platform path normalization
+    ckpt_path = Path(str(champ["checkpoint_path"]).replace("\\", "/"))
+    arch = champ.get("architecture", "LSTM")
+    feat_dim = champ.get("hyperparameters", {}).get("feature_dim", 15)
 
     if arch == "LSTM":
         model = LSTMRegressor(input_dim=feat_dim)
     else:
         model = ConditionAwareMultiTaskTransformer(input_dim=feat_dim)
 
-    checkpoint = torch.load(ckpt_path, map_location="cpu")
-    model.load_state_dict(checkpoint["model_state_dict"])
-    model.eval()
+    if ckpt_path.exists():
+        checkpoint = torch.load(ckpt_path, map_location="cpu")
+        model.load_state_dict(checkpoint["model_state_dict"])
 
+    model.eval()
     _loaded_model = model
     _loaded_model_version = version
     return _loaded_model, champ

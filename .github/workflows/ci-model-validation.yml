@@ -26,10 +26,14 @@ jobs:
           pip install -r requirements.txt
 
       - name: Validate dataset schemas
+        env:
+          PYTHONPATH: .
         run: |
           python -m aeromind.data.pipeline --dataset FD001 --window-size 30 --max-rul 125
 
       - name: Run training smoke test
+        env:
+          PYTHONPATH: .
         run: |
           python -m aeromind.training.experiments --exp EXP-01 --epochs 2 --batch-size 128
 

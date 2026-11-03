@@ -13,7 +13,6 @@ ENV/
 data/processed/*.pt
 data/processed/*.parquet
 data/processed/*.npy
-models/checkpoints/
 mlruns/
 .dvc/cache/
 .dvc/tmp/
@@ -27,10 +26,9 @@ Thumbs.db
 *.log
 algae.mat
 
-# Root duplicate raw data files (already preserved in data/raw/)
-*_FD00*.txt
+# Root duplicate raw data files only (data/raw/*_FD00*.txt are preserved and tracked)
+/*_FD00*.txt
 
 # Secrets & Local Configs
 .env
 .env.local
-

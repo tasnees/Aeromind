@@ -38,10 +38,13 @@ class ModelRegistry:
         version_num = len(self.models["versions"]) + 1
         version_key = str(version_num)
 
+        # Normalize path separators for cross-platform compatibility
+        norm_ckpt_path = str(checkpoint_path).replace("\\", "/")
+
         self.models["versions"][version_key] = {
             "version": version_num,
             "architecture": architecture,
-            "checkpoint_path": checkpoint_path,
+            "checkpoint_path": norm_ckpt_path,
             "metrics": metrics,
             "hyperparameters": hyperparameters,
             "status": "candidate",
