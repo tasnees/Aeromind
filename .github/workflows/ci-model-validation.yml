@@ -32,3 +32,4 @@ jobs:
       - name: Run training smoke test
         run: |
           python -m aeromind.training.experiments --exp EXP-01 --epochs 2 --batch-size 128
+
