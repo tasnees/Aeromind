@@ -4,23 +4,35 @@ import time
 
 from aeromind.agent.guardrails import MaintenanceGuardrails
 from aeromind.agent.tools import MaintenanceTools
+from aeromind.llmops.langfuse_client import LangfuseOpsClient
+from aeromind.llmops.prompts import get_prompt_version
 
 
 class MaintenanceCopilotAgent:
     """
     Autonomous tool-augmented AI Maintenance Assistant for AeroMind Ops.
     Interprets DL predictions, retrieves verified sensor telemetry and technical documents,
-    and enforces strict citation integrity.
+    enforces strict citation integrity, and instruments full Langfuse tracing.
     """
 
     def __init__(
         self,
         tools: Optional[MaintenanceTools] = None,
         prompt_version: str = "v3_uncertainty_aware",
+        langfuse_client: Optional[LangfuseOpsClient] = None,
     ):
         self.tools = tools or MaintenanceTools()
         self.guardrails = MaintenanceGuardrails()
         self.prompt_version = prompt_version
+        self.langfuse = langfuse_client or LangfuseOpsClient()
+
+        # Retrieve versioned prompt (from Langfuse with local fallback)
+        local_prompt_data = get_prompt_version(self.prompt_version)
+        self.active_prompt = self.langfuse.get_prompt(
+            prompt_name="aeromind_maintenance_copilot",
+            version=self.prompt_version,
+            fallback_prompt=local_prompt_data.get("system_prompt", ""),
+        )
 
     def _extract_engine_id(self, query: str) -> Optional[int]:
         match = re.search(r"engine\s+(\d+)", query, re.IGNORECASE)
@@ -34,10 +46,18 @@ class MaintenanceCopilotAgent:
 
     def run(self, user_query: str) -> Dict[str, Any]:
         start_time = time.time()
+        trace = self.langfuse.start_trace(
+            name="copilot_run",
+            metadata={"prompt_version": self.prompt_version, "query_length": len(user_query)},
+            tags=["aeromind", "maintenance_copilot", self.prompt_version],
+        )
 
         # 1. Input Guardrails
-        is_safe, error_msg = self.guardrails.validate_user_input(user_query)
+        with trace.span("input_guardrail", input_data=user_query):
+            is_safe, error_msg = self.guardrails.validate_user_input(user_query)
+        
         if not is_safe:
+            trace.update(output=error_msg, metadata={"status": "REJECTED_SECURITY"})
             return {
                 "response": error_msg,
                 "tool_calls": [],
@@ -45,11 +65,15 @@ class MaintenanceCopilotAgent:
                 "prompt_version": self.prompt_version,
                 "latency_sec": round(time.time() - start_time, 3),
                 "status": "REJECTED_SECURITY",
+                "trace_id": getattr(trace, "id", None),
             }
 
         # 2. Domain Applicability & Abstention Check
-        is_supported, abstention_msg = self.guardrails.check_domain_applicability(user_query)
+        with trace.span("domain_applicability_guardrail", input_data=user_query):
+            is_supported, abstention_msg = self.guardrails.check_domain_applicability(user_query)
+        
         if not is_supported:
+            trace.update(output=abstention_msg, metadata={"status": "ABSTAINED_OUT_OF_DOMAIN"})
             return {
                 "response": abstention_msg,
                 "tool_calls": [],
@@ -57,6 +81,7 @@ class MaintenanceCopilotAgent:
                 "prompt_version": self.prompt_version,
                 "latency_sec": round(time.time() - start_time, 3),
                 "status": "ABSTAINED_OUT_OF_DOMAIN",
+                "trace_id": getattr(trace, "id", None),
             }
 
         # 3. Dynamic Tool Coordination
@@ -68,12 +93,14 @@ class MaintenanceCopilotAgent:
         # Engine Telemetry Tool Call
         engine_id = self._extract_engine_id(user_query)
         if engine_id is not None:
-            health = self.tools.get_engine_health(engine_id)
+            with trace.span("tool_get_engine_health", input_data={"engine_id": engine_id}):
+                health = self.tools.get_engine_health(engine_id)
             tool_calls.append({"tool": "get_engine_health", "args": {"engine_id": engine_id}, "result": health})
             
             if "error" not in health:
                 health_data = health
-                sensors = self.tools.get_sensor_history(engine_id, window=20)
+                with trace.span("tool_get_sensor_history", input_data={"engine_id": engine_id, "window": 20}):
+                    sensors = self.tools.get_sensor_history(engine_id, window=20)
                 tool_calls.append({"tool": "get_sensor_history", "args": {"engine_id": engine_id}, "result": sensors})
                 
                 context_blocks.append(
@@ -85,7 +112,8 @@ class MaintenanceCopilotAgent:
                 )
 
         # Knowledge Base Retrieval Tool Call
-        doc_results = self.tools.search_technical_docs(user_query)
+        with trace.span("tool_search_technical_docs", input_data={"query": user_query}):
+            doc_results = self.tools.search_technical_docs(user_query)
         tool_calls.append({"tool": "search_technical_docs", "args": {"query": user_query}, "count": len(doc_results)})
 
         for doc in doc_results:
@@ -102,24 +130,36 @@ class MaintenanceCopilotAgent:
             )
             status = "ABSTAINED_NO_EVIDENCE"
         else:
-            response = self._synthesize_response(user_query, engine_id, health_data, doc_results)
+            with trace.span("evidence_synthesis"):
+                response = self._synthesize_response(user_query, engine_id, health_data, doc_results)
             status = "SUCCESS"
 
         # 5. Output Verification Guardrails
-        citation_check = self.guardrails.verify_citations(response, doc_results)
-        num_consistent = self.guardrails.verify_numerical_consistency(response, health_data)
+        with trace.span("output_guardrails"):
+            citation_check = self.guardrails.verify_citations(response, doc_results)
+            num_consistent = self.guardrails.verify_numerical_consistency(response, health_data)
+
+        # Log audit scores to Langfuse trace
+        trace_id = getattr(trace, "id", None)
+        if trace_id:
+            self.langfuse.log_score(trace_id, "citation_verified", 1.0 if citation_check["passed"] else 0.0)
+            self.langfuse.log_score(trace_id, "numerical_verified", 1.0 if num_consistent else 0.0)
+
+        trace.update(output=response, metadata={"status": status, "citations_count": len(citations)})
 
         return {
             "response": response,
             "engine_id": engine_id,
             "tool_calls": tool_calls,
             "citations": list(set(citations)),
+            "retrieval_context": context_blocks,
             "health_summary": health_data,
             "citation_verified": citation_check["passed"],
             "numerical_verified": num_consistent,
             "prompt_version": self.prompt_version,
             "latency_sec": round(time.time() - start_time, 3),
             "status": status,
+            "trace_id": trace_id,
         }
 
     def _synthesize_response(

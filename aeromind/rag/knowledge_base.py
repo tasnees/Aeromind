@@ -2,7 +2,13 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 import numpy as np
-import PyPDF2
+
+try:
+    import PyPDF2
+    PYPDF2_AVAILABLE = True
+except ImportError:
+    PYPDF2_AVAILABLE = False
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -20,6 +26,18 @@ class TechnicalKnowledgeBase:
         self.tfidf_matrix = None
         self.is_indexed = False
 
+        # Load pre-built index if present on disk
+        if self.index_file.exists():
+            try:
+                with open(self.index_file, "r", encoding="utf-8") as f:
+                    self.chunks = json.load(f)
+                if self.chunks:
+                    corpus = [c["text"] for c in self.chunks]
+                    self.tfidf_matrix = self.vectorizer.fit_transform(corpus)
+                    self.is_indexed = True
+            except Exception as e:
+                print(f"[KnowledgeBase] Warning loading existing index: {e}")
+
     def ingest_pdf(
         self,
         pdf_path: Path,
@@ -28,6 +46,9 @@ class TechnicalKnowledgeBase:
         chunk_size: int = 500,
         chunk_overlap: int = 50,
     ):
+        if not PYPDF2_AVAILABLE:
+            print(f"[KnowledgeBase] Warning: PyPDF2 is not installed. Skipping PDF ingestion for '{document_title}'.")
+            return
         pdf_path = Path(pdf_path)
         if not pdf_path.exists():
             raise FileNotFoundError(f"PDF not found: {pdf_path}")

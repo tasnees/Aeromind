@@ -1,0 +1,18 @@
+{
+  "run_id": "prompt_test_prompt_v1.0.0_1794864905",
+  "run_name": "prompt_test_prompt_v1.0.0",
+  "start_time": "2026-11-16T22:35:05Z",
+  "params": {
+    "prompt_name": "test_prompt",
+    "version_id": "v1.0.0",
+    "description": "Unit test prompt.",
+    "system_prompt_length": 19
+  },
+  "metrics": {},
+  "artifacts": [
+    "mlruns_local\\llmops\\test_prompt_v1.0.0.json"
+  ],
+  "mlflow_run_id": "62fde71690ad46498922d9dcfa632c6f",
+  "end_time": "2026-11-16T22:35:07Z",
+  "status": "REGISTERED"
+}

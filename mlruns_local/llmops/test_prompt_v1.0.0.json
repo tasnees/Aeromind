@@ -1,0 +1,7 @@
+{
+  "prompt_name": "test_prompt",
+  "version_id": "v1.0.0",
+  "system_prompt": "Test system prompt.",
+  "description": "Unit test prompt.",
+  "timestamp": "2026-11-16T22:38:09Z"
+}

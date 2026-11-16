@@ -49,8 +49,28 @@ class TrainingConfig:
 
 
 @dataclass
+class LLMOpsConfig:
+    # Langfuse
+    langfuse_public_key: Optional[str] = None
+    langfuse_secret_key: Optional[str] = None
+    langfuse_host: str = "https://cloud.langfuse.com"
+    langfuse_prompt_name: str = "aeromind_maintenance_copilot"
+
+    # MLflow Prompt & LLMOps Tracking
+    mlflow_experiment_name: str = "AeroMind_LLMOps_Evaluation"
+    mlflow_tracking_uri: Optional[str] = None
+
+    # Quality Gate Thresholds
+    min_faithfulness: float = 0.80
+    min_citation_correctness: float = 0.85
+    min_abstention_quality: float = 0.90
+    max_hallucination_rate: float = 0.15
+
+
+@dataclass
 class AppConfig:
     data: DataConfig = field(default_factory=DataConfig)
     model: ModelConfig = field(default_factory=ModelConfig)
     training: TrainingConfig = field(default_factory=TrainingConfig)
+    llmops: LLMOpsConfig = field(default_factory=LLMOpsConfig)
 

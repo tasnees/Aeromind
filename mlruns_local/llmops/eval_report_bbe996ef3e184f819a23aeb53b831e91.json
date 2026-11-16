@@ -1,0 +1,90 @@
+{
+  "run_id": "bbe996ef3e184f819a23aeb53b831e91",
+  "prompt_version": "v3_uncertainty_aware",
+  "timestamp": "2026-11-16T22:35:08Z",
+  "gate_decision": "FAIL",
+  "ragas": {
+    "ragas_faithfulness": 0.4171,
+    "ragas_answer_relevancy": 0.7357,
+    "ragas_context_precision": 1.0,
+    "ragas_context_recall": 0.8667,
+    "samples_count": 5,
+    "engine": "ragas_deterministic"
+  },
+  "deepeval": {
+    "total_test_cases": 5,
+    "passed_test_cases": 5,
+    "pass_rate": 1.0,
+    "hallucination_rate": 0.0,
+    "gate_decision": "PASS",
+    "details": [
+      {
+        "query": "Explain the engineering significance of C-MAPSS dataset origin (reference 1).",
+        "passed": true,
+        "hallucination_detected": false,
+        "numerical_consistent": true,
+        "guardrail_adhered": true,
+        "diagnostics": {
+          "hallucination": "Output grounded in verified context and telemetry.",
+          "numerical": "No numerical telemetry required for this query.",
+          "guardrail": "Guardrail compliance passed."
+        }
+      },
+      {
+        "query": "Explain the engineering significance of C-MAPSS dataset origin (reference 2).",
+        "passed": true,
+        "hallucination_detected": false,
+        "numerical_consistent": true,
+        "guardrail_adhered": true,
+        "diagnostics": {
+          "hallucination": "Output grounded in verified context and telemetry.",
+          "numerical": "No numerical telemetry required for this query.",
+          "guardrail": "Guardrail compliance passed."
+        }
+      },
+      {
+        "query": "Explain the engineering significance of C-MAPSS dataset origin (reference 3).",
+        "passed": true,
+        "hallucination_detected": false,
+        "numerical_consistent": true,
+        "guardrail_adhered": true,
+        "diagnostics": {
+          "hallucination": "Output grounded in verified context and telemetry.",
+          "numerical": "No numerical telemetry required for this query.",
+          "guardrail": "Guardrail compliance passed."
+        }
+      },
+      {
+        "query": "Explain the engineering significance of C-MAPSS dataset origin (reference 4).",
+        "passed": true,
+        "hallucination_detected": false,
+        "numerical_consistent": true,
+        "guardrail_adhered": true,
+        "diagnostics": {
+          "hallucination": "Output grounded in verified context and telemetry.",
+          "numerical": "No numerical telemetry required for this query.",
+          "guardrail": "Guardrail compliance passed."
+        }
+      },
+      {
+        "query": "Explain the engineering significance of C-MAPSS dataset origin (reference 5).",
+        "passed": true,
+        "hallucination_detected": false,
+        "numerical_consistent": true,
+        "guardrail_adhered": true,
+        "diagnostics": {
+          "hallucination": "Output grounded in verified context and telemetry.",
+          "numerical": "No numerical telemetry required for this query.",
+          "guardrail": "Guardrail compliance passed."
+        }
+      }
+    ],
+    "framework": "deepeval_deterministic_harness"
+  },
+  "copilot": {
+    "citation_correctness": 1.0,
+    "abstention_quality": 1.0,
+    "mean_latency_sec": 0.0038
+  },
+  "sample_results_count": 0
+}

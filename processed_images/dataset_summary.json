@@ -1,0 +1,72 @@
+{
+  "dataset_name": "WT Blade Defect Dataset (YOLO Format)",
+  "target_resolution": [
+    1024,
+    1024
+  ],
+  "classes": [
+    "craze",
+    "corrosion",
+    "surface_injure",
+    "thunderstrike",
+    "crack",
+    "hide_craze"
+  ],
+  "class_mapping": {
+    "craze": 0,
+    "corrosion": 1,
+    "surface_injure": 2,
+    "thunderstrike": 3,
+    "crack": 4,
+    "hide_craze": 5
+  },
+  "splits": {
+    "train": {
+      "image_count": 745,
+      "box_count": 1100,
+      "class_distribution": {
+        "craze": 176,
+        "thunderstrike": 62,
+        "surface_injure": 279,
+        "corrosion": 182,
+        "hide_craze": 252,
+        "crack": 149
+      }
+    },
+    "val": {
+      "image_count": 159,
+      "box_count": 246,
+      "class_distribution": {
+        "corrosion": 29,
+        "thunderstrike": 13,
+        "hide_craze": 37,
+        "surface_injure": 80,
+        "craze": 43,
+        "crack": 44
+      }
+    },
+    "test": {
+      "image_count": 161,
+      "box_count": 238,
+      "class_distribution": {
+        "hide_craze": 53,
+        "surface_injure": 53,
+        "craze": 38,
+        "corrosion": 46,
+        "crack": 31,
+        "thunderstrike": 17
+      }
+    }
+  },
+  "total_images": 1065,
+  "total_bounding_boxes": 1584,
+  "class_distribution_total": {
+    "corrosion": 257,
+    "craze": 257,
+    "thunderstrike": 92,
+    "surface_injure": 412,
+    "hide_craze": 342,
+    "crack": 224
+  },
+  "resized_images_count": 1
+}

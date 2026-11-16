@@ -21,11 +21,18 @@ AeroMind Ops connects two intelligent systems through a unified MLOps and LLMOps
      - *RUL Regression Head:* Continuous point estimate $\hat{y}_{RUL}$.
      - *Classification Head:* Ordinal degradation stages (Healthy / Degraded / Critical).
      - *Quantile Uncertainty Head:* Pinball loss estimates ($q_{0.10}, q_{0.50}, q_{0.90}$).
-2. **LLM-Powered Maintenance Assistant:**
+2. **LLM-Powered Maintenance Assistant & Unified LLMOps:**
    - Grounded RAG indexing NASA research literature (`Damage Propagation Modeling.pdf`) and C-MAPSS engineering manuals.
    - Tool execution (`get_engine_health`, `get_sensor_history`, `search_technical_docs`, `generate_maintenance_report`).
    - Production Guardrails: Mandatory source citation, numerical consistency verification against verified telemetry APIs, and explicit out-of-domain abstention.
-3. **Enterprise Platform Infrastructure:**
+   - **Langfuse:** Distributed execution tracing, span latency breakdown, prompt management, and score tracking.
+   - **Ragas:** Quantitative RAG evaluation measuring Faithfulness, Answer Relevancy, Context Precision, and Context Recall.
+   - **DeepEval:** Production test assertions for hallucination detection, numerical consistency, and guardrail compliance.
+   - **MLflow:** Centralized prompt version tracking, artifact logging, and evaluation experiment metrics.
+3. **Computer Vision Blade Defect Inspection (YOLO):**
+   - Automated borescope defect detection on turbine/compressor blades (craze, corrosion, surface injure, thunderstrike, crack, hide craze).
+   - Ultralytics YOLOv8/v11 fine-tuning pipeline with normalized annotations and stratified 70/15/15 splits.
+4. **Enterprise Platform Infrastructure:**
    - FastAPI microservice architecture.
    - Experiment tracking (`AeroMind_RUL_Research`) & Model Registry (`AeroMind-RUL-Model`).
    - CI/CD quality gates & Docker Compose orchestration.
@@ -42,10 +49,11 @@ mlops+dl/
 │   ├── core/            # Config, constants, and system settings
 │   ├── data/            # Ingestion, validation, target engineering, sliding window
 │   ├── explainability/  # Sensor ablation & Integrated Gradients attribution
-│   ├── llmops/          # Versioned prompts, 150-Q benchmark dataset, eval gate
+│   ├── llmops/          # Langfuse, Ragas, DeepEval, MLflow prompt tracking & benchmark gate
 │   ├── mlops/           # MLflow experiment tracker & model registry
 │   ├── models/          # LSTM, TCN, Transformer, Multi-Task Transformer
-│   └── training/        # Trainer, Huber/Pinball/NASA loss, metrics
+│   ├── training/        # Trainer, Huber/Pinball/NASA loss, metrics
+│   └── vision/          # YOLO blade defect dataset prep, inspection & fine-tuning
 ├── configs/             # Configuration definitions
 ├── data/
 │   ├── raw/             # C-MAPSS raw datasets (FD001 - FD004) & reference PDFs
@@ -89,11 +97,15 @@ Executes all 13 unit, data integrity, model, RAG, and API integration tests:
 python -m pytest tests -v
 ```
 
-### 3.5 Run LLMOps Quality Gate Evaluation
-Evaluates candidate prompts across the 150-question benchmark dataset:
+### 3.5 Run Unified LLMOps Quality Gate Evaluation
+Executes the multi-framework evaluation harness combining Langfuse, Ragas, DeepEval, and MLflow across the benchmark dataset:
 ```powershell
-python -m aeromind.llmops.evaluation
+python -m aeromind.llmops.evaluation --samples 25
 ```
+- **Langfuse:** Traces copilot execution spans (guardrails, tool calls, synthesis) and logs evaluation feedback.
+- **Ragas:** Computes quantitative RAG metrics (*Faithfulness*, *Answer Relevancy*, *Context Precision*, *Context Recall*).
+- **DeepEval:** Runs assertive test cases checking for hallucinations, telemetry numerical consistency, and guardrail compliance.
+- **MLflow:** Records prompt templates, evaluation runs, and metrics under the `AeroMind_LLMOps_Evaluation` experiment.
 
 ### 3.6 Launch FastAPI Production Backend
 ```powershell

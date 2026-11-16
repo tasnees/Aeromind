@@ -1,0 +1,81 @@
+{
+  "run_id": "eval_v3_uncertainty_aware_1794864989_1794864989",
+  "run_name": "eval_v3_uncertainty_aware_1794864989",
+  "start_time": "2026-11-16T22:36:29Z",
+  "params": {
+    "champion_dl_model": null,
+    "champion_dl_version": 1,
+    "champion_dl_arch": "LSTM",
+    "prompt_version": "v3_uncertainty_aware",
+    "gate_decision": "PASS",
+    "eval_frameworks": "Ragas + DeepEval + Langfuse + MLflow"
+  },
+  "metrics": {
+    "ragas_faithfulness": [
+      {
+        "step": null,
+        "value": 1.0
+      }
+    ],
+    "ragas_answer_relevancy": [
+      {
+        "step": null,
+        "value": 0.8043
+      }
+    ],
+    "ragas_context_precision": [
+      {
+        "step": null,
+        "value": 1.0
+      }
+    ],
+    "ragas_context_recall": [
+      {
+        "step": null,
+        "value": 0.8667
+      }
+    ],
+    "samples_count": [
+      {
+        "step": null,
+        "value": 10.0
+      }
+    ],
+    "deepeval_pass_rate": [
+      {
+        "step": null,
+        "value": 1.0
+      }
+    ],
+    "deepeval_hallucination_rate": [
+      {
+        "step": null,
+        "value": 0.0
+      }
+    ],
+    "citation_correctness": [
+      {
+        "step": null,
+        "value": 1.0
+      }
+    ],
+    "abstention_quality": [
+      {
+        "step": null,
+        "value": 1.0
+      }
+    ],
+    "mean_latency_sec": [
+      {
+        "step": null,
+        "value": 0.0047
+      }
+    ]
+  },
+  "artifacts": [
+    "mlruns_local\\llmops\\eval_report_168b62a56e9d4eaab7fe0ae03fa0fad6.json"
+  ],
+  "mlflow_run_id": "168b62a56e9d4eaab7fe0ae03fa0fad6",
+  "end_time": "2026-11-16T22:36:30Z",
+  "status": "COMPLETED"
+}

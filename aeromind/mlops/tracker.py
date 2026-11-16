@@ -33,6 +33,9 @@ class ExperimentTracker:
         self.use_mlflow = MLFLOW_AVAILABLE
         if self.use_mlflow:
             try:
+                # Opt-out of filesystem deprecation exception for local runs
+                if "MLFLOW_ALLOW_FILE_STORE" not in os.environ:
+                    os.environ["MLFLOW_ALLOW_FILE_STORE"] = "true"
                 # Default to local mlruns directory if tracking_uri not explicitly provided
                 uri = tracking_uri or os.getenv("MLFLOW_TRACKING_URI", "file:./mlruns")
                 mlflow.set_tracking_uri(uri)
@@ -76,6 +79,9 @@ class ExperimentTracker:
             except Exception as e:
                 print(f"[Tracker] MLflow log_params error: {e}")
 
+    # Backward-compatible alias
+    log_hyperparameters = log_params
+
     def log_metric(self, key: str, value: float, step: Optional[int] = None):
         if key not in self.run_data["metrics"]:
             self.run_data["metrics"][key] = []
@@ -99,8 +105,10 @@ class ExperimentTracker:
             except Exception as e:
                 print(f"[Tracker] MLflow log_artifact error: {e}")
 
-    def end_run(self):
+    def end_run(self, status: Optional[str] = None):
         self.run_data["end_time"] = time.strftime("%Y-%m-%dT%H:%M:%SZ")
+        if status:
+            self.run_data["status"] = status
         
         # Always persist run metadata to local json file
         if self.active_run_id:
@@ -110,8 +118,11 @@ class ExperimentTracker:
 
         if self.use_mlflow:
             try:
-                mlflow.end_run()
+                mlflow.end_run(status=status)
             except Exception:
-                pass
+                try:
+                    mlflow.end_run()
+                except Exception:
+                    pass
 
         self.active_run_id = None

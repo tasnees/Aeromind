@@ -29,19 +29,20 @@ class MaintenanceTools:
         # Load knowledge base
         if knowledge_base is None:
             self.kb = TechnicalKnowledgeBase()
-            # Index Damage Propagation Modeling PDF if available
-            pdf_path = Path("data/raw/Damage Propagation Modeling.pdf")
-            if pdf_path.exists():
-                try:
-                    self.kb.ingest_pdf(
-                        pdf_path=pdf_path,
-                        document_id="saxena_2008_damage_propagation",
-                        document_title="Damage Propagation Modeling for Aircraft Engine Run-to-Failure Simulation",
-                    )
-                except Exception as e:
-                    print(f"Warning: PDF ingestion error: {e}")
-            self.kb.add_curated_knowledge()
-            self.kb.build_index()
+            if not self.kb.is_indexed:
+                # Index Damage Propagation Modeling PDF if available
+                pdf_path = Path("data/raw/Damage Propagation Modeling.pdf")
+                if pdf_path.exists():
+                    try:
+                        self.kb.ingest_pdf(
+                            pdf_path=pdf_path,
+                            document_id="saxena_2008_damage_propagation",
+                            document_title="Damage Propagation Modeling for Aircraft Engine Run-to-Failure Simulation",
+                        )
+                    except Exception as e:
+                        print(f"Warning: PDF ingestion error: {e}")
+                self.kb.add_curated_knowledge()
+                self.kb.build_index()
         else:
             self.kb = knowledge_base
 

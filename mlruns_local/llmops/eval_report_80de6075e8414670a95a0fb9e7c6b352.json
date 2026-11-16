@@ -1,0 +1,19 @@
+{
+  "run_id": "80de6075e8414670a95a0fb9e7c6b352",
+  "prompt_version": "v3_uncertainty_aware",
+  "timestamp": "2026-11-16T22:38:09Z",
+  "gate_decision": "PASS",
+  "ragas": {
+    "ragas_faithfulness": 0.95,
+    "ragas_answer_relevancy": 0.92
+  },
+  "deepeval": {
+    "pass_rate": 0.96,
+    "hallucination_rate": 0.04
+  },
+  "copilot": {
+    "citation_correctness": 0.98,
+    "abstention_quality": 1.0
+  },
+  "sample_results_count": 0
+}
