@@ -166,5 +166,29 @@
     "chunk_id": "maint_proc_c1",
     "source_type": "maintenance_sop",
     "text": "When Remaining Useful Life (RUL) drops below 30 cycles (Critical Degradation Stage), immediate borescope inspection of the High Pressure Compressor (HPC) stage 3-5 blades is mandatory within 5 cycles. For RUL between 30 and 80 cycles (Degraded Stage), schedule compressor blade tip clearance monitoring and trend analysis."
+  },
+  {
+    "document_id": "cmapss_spec_001",
+    "document_title": "C-MAPSS Simulation Reference Manual",
+    "page": 1,
+    "chunk_id": "cmapss_spec_c1",
+    "source_type": "engineering_specification",
+    "text": "The C-MAPSS turbofan model simulates a 90,000 lb thrust class engine. HPC (High Pressure Compressor) fault mode is characterized by degradation in flow capacity and adiabatic efficiency. Key indicators include rising HPC outlet temperature (T50 / sensor_3), static pressure drop (Ps30 / sensor_11), and elevated core speed (Nc / sensor_9)."
+  },
+  {
+    "document_id": "cmapss_spec_002",
+    "document_title": "C-MAPSS Fault Modes & Operational Limits",
+    "page": 2,
+    "chunk_id": "cmapss_spec_c2",
+    "source_type": "engineering_specification",
+    "text": "Sub-dataset FD001 simulates sea-level standard day operating conditions with single fault mode HPC degradation. Sub-dataset FD004 introduces six flight conditions spanning altitudes from 0 to 42,000 ft, Mach numbers from 0.0 to 0.84, and dual fault modes combining HPC and Fan degradation. HPC coolant bleed (sensor_20) and LPT coolant bleed (sensor_21) reflect turbine thermal load compensation."
+  },
+  {
+    "document_id": "maintenance_proc_042",
+    "document_title": "Turbofan Predictive Maintenance Standard Operating Procedures",
+    "page": 14,
+    "chunk_id": "maint_proc_c1",
+    "source_type": "maintenance_sop",
+    "text": "When Remaining Useful Life (RUL) drops below 30 cycles (Critical Degradation Stage), immediate borescope inspection of the High Pressure Compressor (HPC) stage 3-5 blades is mandatory within 5 cycles. For RUL between 30 and 80 cycles (Degraded Stage), schedule compressor blade tip clearance monitoring and trend analysis."
   }
 ]

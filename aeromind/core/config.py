@@ -68,9 +68,20 @@ class LLMOpsConfig:
 
 
 @dataclass
+class VectorDBConfig:
+    provider: str = "qdrant"  # "qdrant" or "tfidf_local"
+    qdrant_url: Optional[str] = None  # None for local embedded path mode
+    qdrant_path: Path = Path("data/processed/qdrant_storage")
+    collection_name: str = "aeromind_technical_docs"
+    vector_size: int = 384
+    distance: str = "cosine"
+
+
+@dataclass
 class AppConfig:
     data: DataConfig = field(default_factory=DataConfig)
     model: ModelConfig = field(default_factory=ModelConfig)
     training: TrainingConfig = field(default_factory=TrainingConfig)
+    vectordb: VectorDBConfig = field(default_factory=VectorDBConfig)
     llmops: LLMOpsConfig = field(default_factory=LLMOpsConfig)
 

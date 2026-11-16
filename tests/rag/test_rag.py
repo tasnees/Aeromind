@@ -1,4 +1,7 @@
-import pytest
+try:
+    import pytest
+except ImportError:
+    pytest = None
 from aeromind.agent.copilot import MaintenanceCopilotAgent
 from aeromind.agent.guardrails import MaintenanceGuardrails
 from aeromind.agent.tools import MaintenanceTools
