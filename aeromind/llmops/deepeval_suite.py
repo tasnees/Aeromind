@@ -12,14 +12,14 @@ from typing import Any, Dict, List, Optional
 import numpy as np
 
 try:
-    from deepeval.test_case import LLMTestCase
-    from deepeval.metrics import (
+    from deepeval.test_case import LLMTestCase  # type: ignore
+    from deepeval.metrics import (  # type: ignore
         FaithfulnessMetric,
         AnswerRelevancyMetric,
         HallucinationMetric,
         GEval,
     )
-    from deepeval import assert_test
+    from deepeval import assert_test  # type: ignore
     DEEPEVAL_AVAILABLE = True
 except ImportError:
     DEEPEVAL_AVAILABLE = False

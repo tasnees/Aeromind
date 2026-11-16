@@ -16,14 +16,14 @@ from typing import Any, Dict, List, Optional
 import numpy as np
 
 try:
-    import PyPDF2
+    import PyPDF2  # type: ignore
     PYPDF2_AVAILABLE = True
 except ImportError:
     PYPDF2_AVAILABLE = False
 
 try:
-    from qdrant_client import QdrantClient
-    from qdrant_client.http import models as qmodels
+    from qdrant_client import QdrantClient  # type: ignore
+    from qdrant_client.http import models as qmodels  # type: ignore
     QDRANT_AVAILABLE = True
 except ImportError:
     QDRANT_AVAILABLE = False
@@ -42,7 +42,7 @@ class DenseVectorEncoder:
         self.dim = dim
         self._st_model = None
         try:
-            from sentence_transformers import SentenceTransformer
+            from sentence_transformers import SentenceTransformer  # type: ignore
             self._st_model = SentenceTransformer("all-MiniLM-L6-v2")
         except Exception:
             self._st_model = None

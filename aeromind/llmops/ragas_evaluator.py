@@ -12,9 +12,9 @@ from typing import Any, Dict, List, Optional
 import numpy as np
 
 try:
-    from datasets import Dataset
-    from ragas import evaluate
-    from ragas.metrics import (
+    from datasets import Dataset  # type: ignore
+    from ragas import evaluate  # type: ignore
+    from ragas.metrics import (  # type: ignore
         faithfulness,
         answer_relevancy,
         context_precision,

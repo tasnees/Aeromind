@@ -17,7 +17,7 @@ import json
 from aeromind.core.config import LLMOpsConfig
 
 try:
-    from langfuse import Langfuse
+    from langfuse import Langfuse  # type: ignore
     LANGFUSE_AVAILABLE = True
 except ImportError:
     LANGFUSE_AVAILABLE = False

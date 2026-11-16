@@ -28,7 +28,7 @@ def train_yolo_defect_model(
     Fine-tunes a pretrained YOLO model on the blade defect dataset.
     """
     try:
-        from ultralytics import YOLO
+        from ultralytics import YOLO  # type: ignore
     except ImportError:
         print("\n[ERROR] Ultralytics is not installed.")
         print("Please install it with: pip install ultralytics\n")
