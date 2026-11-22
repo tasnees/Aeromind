@@ -1,0 +1,46 @@
+{
+  "run_id": "EXP-02_1795202760",
+  "run_name": "EXP-02",
+  "start_time": "2026-11-20T20:26:00Z",
+  "params": {
+    "exp_id": "EXP-02",
+    "architecture": "TCN",
+    "dataset": "FD001",
+    "window_size": 30,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "epochs": 30,
+    "feature_dim": 15
+  },
+  "metrics": {
+    "test_mae": [
+      {
+        "step": null,
+        "value": 11.2604
+      }
+    ],
+    "test_rmse": [
+      {
+        "step": null,
+        "value": 15.0069
+      }
+    ],
+    "test_nasa_score": [
+      {
+        "step": null,
+        "value": 353.67
+      }
+    ],
+    "test_loss": [
+      {
+        "step": null,
+        "value": 11.1766
+      }
+    ]
+  },
+  "artifacts": [
+    "models\\checkpoints\\EXP-02_TCN_best.pth"
+  ],
+  "mlflow_run_id": "2457d7a5a1a243658a30e20a69784439",
+  "end_time": "2026-11-20T20:28:58Z"
+}

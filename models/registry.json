@@ -21,12 +21,85 @@
         "epochs": 10,
         "feature_dim": 15
       },
-      "status": "champion",
+      "status": "archived",
       "registered_at": "2026-11-03T21:56:47Z"
+    },
+    "2": {
+      "version": 2,
+      "architecture": "LSTM",
+      "checkpoint_path": "models/checkpoints/EXP-01_LSTM_best.pth",
+      "metrics": {
+        "mae": 10.7803,
+        "rmse": 15.1751,
+        "nasa_score": 367.72,
+        "loss": 10.2924
+      },
+      "hyperparameters": {
+        "exp_id": "EXP-01",
+        "architecture": "LSTM",
+        "dataset": "FD001",
+        "window_size": 30,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "epochs": 30,
+        "feature_dim": 15
+      },
+      "status": "archived",
+      "registered_at": "2026-11-20T20:25:31Z"
+    },
+    "3": {
+      "version": 3,
+      "architecture": "TCN",
+      "checkpoint_path": "models/checkpoints/EXP-02_TCN_best.pth",
+      "metrics": {
+        "mae": 11.2604,
+        "rmse": 15.0069,
+        "nasa_score": 353.67,
+        "loss": 11.1766
+      },
+      "hyperparameters": {
+        "exp_id": "EXP-02",
+        "architecture": "TCN",
+        "dataset": "FD001",
+        "window_size": 30,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "epochs": 30,
+        "feature_dim": 15
+      },
+      "status": "archived",
+      "registered_at": "2026-11-20T20:28:58Z"
+    },
+    "4": {
+      "version": 4,
+      "architecture": "MultiTaskTransformer",
+      "checkpoint_path": "models/checkpoints/EXP-04_MultiTaskTransformer_best.pth",
+      "metrics": {
+        "mae": 12.5468,
+        "rmse": 18.1842,
+        "nasa_score": 1068.06,
+        "loss": 17.331,
+        "stage_accuracy": 0.81,
+        "stage_macro_f1": 0.7771,
+        "picp_80": 0.85,
+        "mpiw_80": 41.1508
+      },
+      "hyperparameters": {
+        "exp_id": "EXP-04",
+        "architecture": "MultiTaskTransformer",
+        "dataset": "FD001",
+        "window_size": 30,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "epochs": 30,
+        "feature_dim": 15
+      },
+      "status": "champion",
+      "registered_at": "2026-11-20T20:33:14Z"
     }
   },
   "aliases": {
-    "latest": 1,
-    "champion": 1
+    "latest": 4,
+    "champion": 4
   }
 }

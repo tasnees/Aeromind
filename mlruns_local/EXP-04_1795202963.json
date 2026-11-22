@@ -1,0 +1,70 @@
+{
+  "run_id": "EXP-04_1795202963",
+  "run_name": "EXP-04",
+  "start_time": "2026-11-20T20:29:23Z",
+  "params": {
+    "exp_id": "EXP-04",
+    "architecture": "MultiTaskTransformer",
+    "dataset": "FD001",
+    "window_size": 30,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "epochs": 30,
+    "feature_dim": 15
+  },
+  "metrics": {
+    "test_mae": [
+      {
+        "step": null,
+        "value": 12.5468
+      }
+    ],
+    "test_rmse": [
+      {
+        "step": null,
+        "value": 18.1842
+      }
+    ],
+    "test_nasa_score": [
+      {
+        "step": null,
+        "value": 1068.06
+      }
+    ],
+    "test_loss": [
+      {
+        "step": null,
+        "value": 17.331
+      }
+    ],
+    "test_stage_accuracy": [
+      {
+        "step": null,
+        "value": 0.81
+      }
+    ],
+    "test_stage_macro_f1": [
+      {
+        "step": null,
+        "value": 0.7771
+      }
+    ],
+    "test_picp_80": [
+      {
+        "step": null,
+        "value": 0.85
+      }
+    ],
+    "test_mpiw_80": [
+      {
+        "step": null,
+        "value": 41.1508
+      }
+    ]
+  },
+  "artifacts": [
+    "models\\checkpoints\\EXP-04_MultiTaskTransformer_best.pth"
+  ],
+  "mlflow_run_id": "19ad147e86fd4a259ddcc91e0424c385",
+  "end_time": "2026-11-20T20:33:14Z"
+}

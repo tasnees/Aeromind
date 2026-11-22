@@ -59,6 +59,31 @@ class ReportRequest(BaseModel):
     engine_id: int = Field(..., description="Target engine ID")
 
 
+class VisionInspectRequest(BaseModel):
+    image_path: str = Field(..., description="Path to borescope image file")
+    save_annotated: bool = Field(True, description="Whether to save annotated detection image")
+
+
+class DefectItem(BaseModel):
+    class_name: str
+    class_id: int
+    confidence: float
+    bbox_xyxy: List[float]
+    severity: str
+    description: str
+    recommended_action: str
+
+
+class VisionInspectResponse(BaseModel):
+    status: str
+    image_name: str
+    defect_count: int
+    highest_severity: str
+    recommended_actions: List[str]
+    defects: List[DefectItem]
+    annotated_image_path: Optional[str] = None
+
+
 class SystemHealthResponse(BaseModel):
     status: str
     service: str

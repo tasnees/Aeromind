@@ -192,3 +192,16 @@ class MaintenanceTools:
             ],
         }
 
+    def inspect_blade_image(
+        self,
+        image_path: str,
+        save_annotated: bool = True,
+    ) -> Dict[str, Any]:
+        """
+        Tool: Inspects a borescope image of turbine or compressor blades using the fine-tuned
+        YOLO defect model. Identifies cracks, corrosion, crazing, surface injuries, and thunderstrikes.
+        """
+        from aeromind.vision.detector import BladeDefectDetector
+        detector = BladeDefectDetector()
+        return detector.detect(image_path, save_annotated=save_annotated)
+

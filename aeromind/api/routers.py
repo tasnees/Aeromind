@@ -16,6 +16,8 @@ from aeromind.api.schemas import (
     ReportRequest,
     SystemHealthResponse,
     UncertaintyBounds,
+    VisionInspectRequest,
+    VisionInspectResponse,
 )
 from aeromind.core.constants import STAGE_NAMES
 from aeromind.mlops.registry import ModelRegistry
@@ -194,6 +196,20 @@ def generate_report_endpoint(request: ReportRequest):
 @router.get("/models")
 def list_models_endpoint():
     return registry.models
+
+
+@router.post("/vision/inspect", response_model=VisionInspectResponse)
+def inspect_blade_endpoint(request: VisionInspectRequest):
+    """Borescope blade inspection endpoint using the fine-tuned YOLO defect model."""
+    try:
+        from aeromind.vision.detector import BladeDefectDetector
+        detector = BladeDefectDetector()
+        result = detector.detect(request.image_path, save_annotated=request.save_annotated)
+        return VisionInspectResponse(**result)
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @router.get("/monitoring/health", response_model=SystemHealthResponse)

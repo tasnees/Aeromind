@@ -1,0 +1,16 @@
+{
+  "total_chunks": 5,
+  "collection_name": "aeromind_technical_docs",
+  "vector_dim": 384,
+  "chunks_by_source_type": {
+    "technical_document": 2,
+    "engineering_specification": 2,
+    "maintenance_sop": 1
+  },
+  "chunks_by_document": {
+    "C-MAPSS Dataset Description and Sensor Reference (NASA)": 2,
+    "C-MAPSS Simulation Reference Manual": 1,
+    "C-MAPSS Fault Modes & Operational Limits": 1,
+    "Turbofan Predictive Maintenance Standard Operating Procedures": 1
+  }
+}
