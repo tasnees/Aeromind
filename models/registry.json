@@ -94,12 +94,40 @@
         "epochs": 30,
         "feature_dim": 15
       },
-      "status": "champion",
+      "status": "archived",
       "registered_at": "2026-11-20T20:33:14Z"
+    },
+    "5": {
+      "version": 5,
+      "architecture": "MultiTaskTransformer",
+      "checkpoint_path": "models/checkpoints/EXP-04_MultiTaskTransformer_best.pth",
+      "metrics": {
+        "mae": 13.4465,
+        "rmse": 18.7635,
+        "nasa_score": 1314.1,
+        "loss": 18.9592,
+        "stage_accuracy": 0.87,
+        "stage_macro_f1": 0.8405,
+        "picp_80": 0.83,
+        "mpiw_80": 41.281
+      },
+      "hyperparameters": {
+        "exp_id": "EXP-04",
+        "architecture": "MultiTaskTransformer",
+        "dataset": "FD001",
+        "window_size": 30,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0005,
+        "epochs": 20,
+        "feature_dim": 15
+      },
+      "status": "champion",
+      "registered_at": "2026-11-23T21:58:30Z"
     }
   },
   "aliases": {
-    "latest": 4,
-    "champion": 4
+    "latest": 5,
+    "champion": 5
   }
 }

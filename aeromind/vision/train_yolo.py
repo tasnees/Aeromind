@@ -63,6 +63,9 @@ def train_yolo_defect_model(
         device=device,
         project=project,
         name=name,
+        cos_lr=True,            # Cosine annealing learning rate for smoother convergence
+        close_mosaic=10,        # Disable mosaic in last 10 epochs for crisp crack/defect edges
+        label_smoothing=0.05,   # Regularize defect class boundaries
         exist_ok=True,
         verbose=True,
     )

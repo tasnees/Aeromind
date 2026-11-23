@@ -28,7 +28,7 @@ class ModelTrainer:
         model_name: str,
         device: Optional[torch.device] = None,
         learning_rate: float = 1e-3,
-        weight_decay: float = 1e-4,
+        weight_decay: float = 5e-4,
         huber_delta: float = 1.0,
         loss_weights: Optional[Dict[str, float]] = None,
         checkpoint_dir: Path = Path("models/checkpoints"),

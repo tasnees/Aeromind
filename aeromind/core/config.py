@@ -23,7 +23,7 @@ class ModelConfig:
     hidden_dim: int = 64
     num_layers: int = 2
     num_heads: int = 4
-    dropout: float = 0.2
+    dropout: float = 0.3
     num_classes: int = 3
     quantiles: List[float] = field(default_factory=lambda: [0.10, 0.50, 0.90])
 
@@ -33,7 +33,7 @@ class TrainingConfig:
     batch_size: int = 64
     epochs: int = 50
     learning_rate: float = 0.001
-    weight_decay: float = 1e-4
+    weight_decay: float = 5e-4
     huber_delta: float = 1.0
     patience: int = 10
     loss_weights: dict = field(

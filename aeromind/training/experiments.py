@@ -114,6 +114,7 @@ def run_experiment(
         "window_size": window_size,
         "batch_size": batch_size,
         "learning_rate": lr,
+        "weight_decay": 5e-4,
         "epochs": epochs,
         "feature_dim": feature_dim,
     }
@@ -124,6 +125,7 @@ def run_experiment(
         model=model,
         model_name=f"{exp_id}_{arch_name}",
         learning_rate=lr,
+        weight_decay=5e-4,
     )
     train_results = trainer.fit(
         dataloaders["train"], dataloaders["val"], epochs=epochs, patience=7

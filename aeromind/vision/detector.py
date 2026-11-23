@@ -31,6 +31,19 @@ SEVERITY_HIERARCHY = {
 }
 
 
+def _resolve_weights_path(specified_path: Optional[Union[str, Path]]) -> Path:
+    candidates = [
+        Path(specified_path) if specified_path else None,
+        Path("models/checkpoints/yolo_blade/exp_yolo_blade_defect/weights/best.pt"),
+        Path("models/checkpoints/best.pt"),
+        Path("best.pt"),
+    ]
+    for c in candidates:
+        if c and c.exists():
+            return c
+    return Path("models/checkpoints/yolo_blade/exp_yolo_blade_defect/weights/best.pt")
+
+
 class BladeDefectDetector:
     """
     Inference and defect assessment engine for turbofan blade borescope imagery.
@@ -39,13 +52,17 @@ class BladeDefectDetector:
     def __init__(
         self,
         weights_path: Optional[Union[str, Path]] = None,
-        conf_threshold: float = 0.25,
+        conf_threshold: float = 0.30,
         iou_threshold: float = 0.45,
+        augment: bool = True,
+        agnostic_nms: bool = True,
         device: str = "cpu",
     ):
-        self.weights_path = Path(weights_path) if weights_path else DEFAULT_WEIGHTS_PATH
+        self.weights_path = _resolve_weights_path(weights_path)
         self.conf_threshold = conf_threshold
         self.iou_threshold = iou_threshold
+        self.augment = augment
+        self.agnostic_nms = agnostic_nms
         self.device = device
         self.model = None
 
@@ -86,11 +103,13 @@ class BladeDefectDetector:
         if not image_path.exists():
             raise FileNotFoundError(f"Image not found at {image_path}")
 
-        # Run YOLO inference
+        # Run YOLO inference with optional TTA (Test-Time Augmentation) & Class-Agnostic NMS
         results = self.model.predict(
             source=str(image_path),
             conf=self.conf_threshold,
             iou=self.iou_threshold,
+            augment=self.augment,
+            agnostic_nms=self.agnostic_nms,
             device=self.device,
             verbose=False,
         )
@@ -155,7 +174,9 @@ def run_cli():
     parser = argparse.ArgumentParser(description="AeroMind Blade Defect Detector CLI")
     parser.add_argument("--image", type=str, required=True, help="Path to input image")
     parser.add_argument("--weights", type=str, default=str(DEFAULT_WEIGHTS_PATH), help="Path to best.pt")
-    parser.add_argument("--conf", type=float, default=0.25, help="Confidence threshold")
+    parser.add_argument("--conf", type=float, default=0.30, help="Confidence threshold (default 0.30)")
+    parser.add_argument("--iou", type=float, default=0.45, help="IoU NMS threshold (default 0.45)")
+    parser.add_argument("--no-augment", action="store_true", help="Disable Test-Time Augmentation (TTA)")
     parser.add_argument("--save", action="store_true", help="Save annotated image")
     parser.add_argument("--device", type=str, default="cpu", help="Device (cpu or 0)")
     args = parser.parse_args()
@@ -163,6 +184,8 @@ def run_cli():
     detector = BladeDefectDetector(
         weights_path=args.weights,
         conf_threshold=args.conf,
+        iou_threshold=args.iou,
+        augment=not args.no_augment,
         device=args.device,
     )
 

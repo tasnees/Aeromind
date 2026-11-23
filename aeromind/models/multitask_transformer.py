@@ -25,7 +25,7 @@ class ConditionAwareMultiTaskTransformer(nn.Module):
         nhead: int = 4,
         num_layers: int = 2,
         dim_feedforward: int = 128,
-        dropout: float = 0.2,
+        dropout: float = 0.3,
         num_classes: int = 3,
         quantiles: List[float] = [0.10, 0.50, 0.90],
         enable_classification: bool = True,
