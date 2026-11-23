@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   backend:
     build:
@@ -12,6 +10,10 @@ services:
       - MLFLOW_TRACKING_URI=http://mlflow:5000
       - QDRANT_URL=http://qdrant:6333
       - ENVIRONMENT=production
+    volumes:
+      - ../aeromind:/app/aeromind
+      - ../data:/app/data
+      - ../models:/app/models
     depends_on:
       - mlflow
       - qdrant

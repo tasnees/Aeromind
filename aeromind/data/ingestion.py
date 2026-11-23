@@ -53,15 +53,27 @@ def load_raw_dataset(
     Returns:
         (train_df, test_df, rul_df)
     """
-    raw_dir = Path(raw_dir)
-    train_path = raw_dir / f"train_{dataset_name}.txt"
-    test_path = raw_dir / f"test_{dataset_name}.txt"
-    rul_path = raw_dir / f"RUL_{dataset_name}.txt"
+    search_dirs = [
+        Path(raw_dir),
+        Path("data/raw"),
+        Path("/app/data/raw"),
+        Path("../data/raw"),
+        Path("."),
+    ]
 
+    train_path, test_path, rul_path = None, None, None
+    for d in search_dirs:
+        candidate_test = d / f"test_{dataset_name}.txt"
+        if candidate_test.exists():
+            test_path = candidate_test
+            train_path = d / f"train_{dataset_name}.txt"
+            rul_path = d / f"RUL_{dataset_name}.txt"
+            break
+
+    if test_path is None or not test_path.exists():
+        raise FileNotFoundError(f"Test dataset test_{dataset_name}.txt not found in search paths: {search_dirs}")
     if not train_path.exists():
         raise FileNotFoundError(f"Training file not found: {train_path}")
-    if not test_path.exists():
-        raise FileNotFoundError(f"Test file not found: {test_path}")
     if not rul_path.exists():
         raise FileNotFoundError(f"RUL ground truth file not found: {rul_path}")
 

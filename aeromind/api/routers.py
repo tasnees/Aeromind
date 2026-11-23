@@ -137,6 +137,8 @@ def predict_rul(request: PredictRequest):
 @router.get("/engines", response_model=List[EngineSummary])
 def list_fleet_engines(limit: int = 50):
     if tools.test_df.empty:
+        tools._load_fleet_cache()
+    if tools.test_df.empty:
         raise HTTPException(status_code=404, detail="Fleet data not loaded.")
 
     units = sorted(tools.test_df["unit_nr"].unique())[:limit]
@@ -157,6 +159,8 @@ def list_fleet_engines(limit: int = 50):
 
 @router.get("/engines/{engine_id}/health")
 def get_engine_health_endpoint(engine_id: int):
+    if tools.test_df.empty:
+        tools._load_fleet_cache()
     health = tools.get_engine_health(engine_id)
     if "error" in health:
         raise HTTPException(status_code=404, detail=health["error"])
@@ -165,6 +169,8 @@ def get_engine_health_endpoint(engine_id: int):
 
 @router.get("/engines/{engine_id}/history")
 def get_engine_history_endpoint(engine_id: int, window: int = 30):
+    if tools.test_df.empty:
+        tools._load_fleet_cache()
     history = tools.get_sensor_history(engine_id, window=window)
     if "error" in history:
         raise HTTPException(status_code=404, detail=history["error"])
