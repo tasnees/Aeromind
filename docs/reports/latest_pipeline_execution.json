@@ -1,0 +1,40 @@
+{
+  "pipeline_status": "SUCCESS",
+  "dataset_name": "FD001",
+  "duration_seconds": 172.72,
+  "ingestion": {
+    "dataset_name": "FD001",
+    "total_engines": 100,
+    "total_records": 20631,
+    "status": "VALIDATED"
+  },
+  "drift": {
+    "drift_detected": true,
+    "drift_share": 1.0,
+    "alert_status": "CRITICAL_DRIFT_ALERT"
+  },
+  "preprocessing": {
+    "num_features": 15,
+    "train_windows": 14459,
+    "val_windows": 3272,
+    "test_windows": 100
+  },
+  "training": {
+    "candidate_version": 7,
+    "test_rmse": 70.1613,
+    "test_nasa_score": 92894.29
+  },
+  "deployment": {
+    "candidate_version": 7,
+    "gate_passed": false,
+    "is_active_champion": false,
+    "details": {
+      "version": 7,
+      "architecture": "MultiTaskTransformer",
+      "rmse_pass": false,
+      "nasa_score_pass": false,
+      "picp_pass": false,
+      "promoted": false
+    }
+  }
+}

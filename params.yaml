@@ -1,0 +1,52 @@
+# AeroMind Ops — Centralized Experiment & Pipeline Hyperparameters
+# Used by DVC pipeline (dvc.yaml), training, and orchestration
+
+data:
+  dataset_name: "FD001"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  window_size: 30
+  stride: 1
+  max_rul: 125
+  val_ratio: 0.2
+  random_seed: 42
+
+model:
+  architecture: "MultiTaskTransformer"  # "LSTM", "TCN", "Transformer", "MultiTaskTransformer"
+  d_model: 64
+  nhead: 4
+  num_layers: 2
+  dim_feedforward: 128
+  dropout: 0.3
+  num_classes: 3
+  quantiles: [0.10, 0.50, 0.90]
+
+train:
+  epochs: 20
+  batch_size: 64
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  huber_delta: 1.0
+  patience: 7
+  loss_weights:
+    rul: 1.0
+    classification: 0.5
+    quantile: 0.5
+
+evaluation:
+  promotion_gate:
+    max_rmse: 22.0
+    max_nasa_score: 2500.0
+    min_picp: 0.75
+
+vision:
+  model_name: "yolov8s.pt"
+  epochs: 80
+  imgsz: 1024
+  batch_size: 8
+  conf_threshold: 0.30
+  iou_threshold: 0.45
+  augment: true
+  cos_lr: true
+  close_mosaic: 10
+  label_smoothing: 0.05

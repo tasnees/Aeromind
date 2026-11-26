@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AeroMind Ops — Data Drift Dashboard</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8fafc; margin: 0; padding: 24px; color: #1e293b; }
+    .container { max-width: 1100px; margin: 0 auto; background: #fff; padding: 28px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+    .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px; }
+    .badge { background: #dc2626; color: white; padding: 8px 16px; border-radius: 8px; font-weight: bold; font-size: 14px; }
+    .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+    .card { background: #f1f5f9; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6; }
+    .card-title { font-size: 12px; color: #64748b; text-transform: uppercase; font-weight: 600; margin-bottom: 4px; }
+    .card-value { font-size: 24px; font-weight: bold; color: #0f172a; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 13px; }
+    th { background: #f8fafc; color: #475569; font-weight: 600; }
+    tr:hover { background: #f8fafc; }
+    .action-box { background: #eff6ff; border-left: 4px solid #2563eb; padding: 14px; border-radius: 6px; margin-top: 24px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1 style="margin: 0; font-size: 22px;">AeroMind Ops — Fleet Sensor Drift Report</h1>
+        <p style="margin: 4px 0 0; color: #64748b; font-size: 13px;">Generated at: 2026-11-26T18:13:51Z</p>
+      </div>
+      <div class="badge">DATASET DRIFT DETECTED</div>
+    </div>
+
+    <div class="metrics-grid">
+      <div class="card">
+        <div class="card-title">Drifted Sensors</div>
+        <div class="card-value">14 / 14</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Drift Ratio</div>
+        <div class="card-value">100.0%</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Threshold</div>
+        <div class="card-value">p &lt; 0.05</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Status</div>
+        <div class="card-value" style="color: #dc2626;">CRITICAL_DRIFT_ALERT</div>
+      </div>
+    </div>
+
+    <h2 style="font-size: 16px; margin-top: 0;">Statistical Feature Analysis (Kolmogorov-Smirnov &amp; Wasserstein)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Sensor Channel</th>
+          <th>Drift Status</th>
+          <th>p-value</th>
+          <th>KS Stat</th>
+          <th>Wasserstein Dist</th>
+          <th>Reference (Train)</th>
+          <th>Current (Test)</th>
+          <th>Mean Shift</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+            <tr>
+              <td><code>sensor_2</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.1794</td>
+              <td>0.2059</td>
+              <td>642.68 ± 0.5</td>
+              <td>642.48 ± 0.4</td>
+              <td>0.03%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_3</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.1678</td>
+              <td>2.4239</td>
+              <td>1590.52 ± 6.13</td>
+              <td>1588.1 ± 5.0</td>
+              <td>0.15%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_4</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.2106</td>
+              <td>4.1986</td>
+              <td>1408.93 ± 9.0</td>
+              <td>1404.74 ± 6.69</td>
+              <td>0.3%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_7</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.1948</td>
+              <td>0.3898</td>
+              <td>553.37 ± 0.89</td>
+              <td>553.76 ± 0.68</td>
+              <td>0.07%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_8</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.1563</td>
+              <td>0.0257</td>
+              <td>2388.1 ± 0.07</td>
+              <td>2388.07 ± 0.06</td>
+              <td>0.0%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_9</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.1353</td>
+              <td>6.9669</td>
+              <td>9065.24 ± 22.08</td>
+              <td>9058.41 ± 11.44</td>
+              <td>0.08%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_11</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.2108</td>
+              <td>0.125</td>
+              <td>47.54 ± 0.27</td>
+              <td>47.42 ± 0.2</td>
+              <td>0.26%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_12</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.1994</td>
+              <td>0.3343</td>
+              <td>521.41 ± 0.74</td>
+              <td>521.75 ± 0.56</td>
+              <td>0.06%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_13</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.1564</td>
+              <td>0.0251</td>
+              <td>2388.1 ± 0.07</td>
+              <td>2388.07 ± 0.06</td>
+              <td>0.0%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_14</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.1156</td>
+              <td>5.3851</td>
+              <td>8143.75 ± 19.08</td>
+              <td>8138.95 ± 10.19</td>
+              <td>0.06%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_15</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.1942</td>
+              <td>0.0163</td>
+              <td>8.44 ± 0.04</td>
+              <td>8.43 ± 0.03</td>
+              <td>0.19%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_17</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.1811</td>
+              <td>0.6391</td>
+              <td>393.21 ± 1.55</td>
+              <td>392.57 ± 1.23</td>
+              <td>0.16%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_20</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.1847</td>
+              <td>0.0762</td>
+              <td>38.82 ± 0.18</td>
+              <td>38.89 ± 0.14</td>
+              <td>0.2%</td>
+            </tr>
+            
+            <tr>
+              <td><code>sensor_21</code></td>
+              <td><span style="background:#fee2e2;color:#991b1b;padding:3px 8px;border-radius:4px;font-weight:bold;">DRIFTED</span></td>
+              <td>0.0</td>
+              <td>0.1934</td>
+              <td>0.046</td>
+              <td>23.29 ± 0.11</td>
+              <td>23.34 ± 0.08</td>
+              <td>0.2%</td>
+            </tr>
+            
+      </tbody>
+    </table>
+
+    <div class="action-box">
+      <strong>Recommended Action:</strong> TRIGGER_CONTINUOUS_RETRAINING: Severe data distribution shift detected across sensor fleet.
+    </div>
+  </div>
+</body>
+</html>

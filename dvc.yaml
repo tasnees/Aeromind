@@ -1,3 +1,6 @@
+# AeroMind Ops — Reproducible End-to-End MLOps Pipeline
+# Orchestrates: Ingestion -> EDA -> Preprocessing -> Training -> Evaluation
+
 stages:
   ingest_validate:
     cmd: python -m aeromind.data.ingestion
@@ -5,15 +8,18 @@ stages:
       - data/raw/train_FD001.txt
       - data/raw/test_FD001.txt
       - data/raw/RUL_FD001.txt
+      - aeromind/data/ingestion.py
+    params:
+      - data.dataset_name
     outs:
-      - data/processed/validation_report.json:
+      - data/processed/validation_report_FD001.json:
           cache: false
 
   eda_analysis:
     cmd: python -m aeromind.data.eda
     deps:
       - data/raw/train_FD001.txt
-      - data/raw/train_FD004.txt
+      - aeromind/data/eda.py
     outs:
       - docs/reports/eda_summary.json:
           cache: false
@@ -28,7 +34,42 @@ stages:
       - data/raw/RUL_FD001.txt
       - aeromind/data/preprocessing.py
       - aeromind/data/dataset.py
+      - aeromind/data/target.py
+    params:
+      - data.window_size
+      - data.max_rul
+      - data.val_ratio
     outs:
       - data/processed/scaler_params_FD001.json:
           cache: false
 
+  train_model:
+    cmd: python -m aeromind.training.experiments --exp EXP-04 --dataset FD001 --epochs 20 --batch-size 64
+    deps:
+      - aeromind/models/multitask_transformer.py
+      - aeromind/training/trainer.py
+      - aeromind/training/losses.py
+      - data/processed/scaler_params_FD001.json
+    params:
+      - train.epochs
+      - train.batch_size
+      - train.learning_rate
+      - train.weight_decay
+      - model.dropout
+    outs:
+      - models/checkpoints/EXP-04_MultiTaskTransformer_best.pth:
+          cache: true
+      - models/checkpoints/EXP-04_MultiTaskTransformer_history.json:
+          cache: false
+
+  evaluate_drift:
+    cmd: python -m aeromind.monitoring.drift_detector
+    deps:
+      - data/raw/train_FD001.txt
+      - data/raw/test_FD001.txt
+      - aeromind/monitoring/drift_detector.py
+    outs:
+      - data/processed/drift_report.json:
+          cache: false
+      - docs/reports/data_drift_dashboard.html:
+          cache: false

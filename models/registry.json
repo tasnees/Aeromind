@@ -124,10 +124,66 @@
       },
       "status": "champion",
       "registered_at": "2026-11-23T21:58:30Z"
+    },
+    "6": {
+      "version": 6,
+      "architecture": "MultiTaskTransformer",
+      "checkpoint_path": "models/checkpoints/EXP-04_MultiTaskTransformer_best.pth",
+      "metrics": {
+        "mae": 39.9554,
+        "rmse": 47.3997,
+        "nasa_score": 9486.51,
+        "loss": 69.7182,
+        "stage_accuracy": 0.72,
+        "stage_macro_f1": 0.563,
+        "picp_80": 0.07,
+        "mpiw_80": 16.0088
+      },
+      "hyperparameters": {
+        "exp_id": "EXP-04",
+        "architecture": "MultiTaskTransformer",
+        "dataset": "FD001",
+        "window_size": 30,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0005,
+        "epochs": 1,
+        "feature_dim": 15
+      },
+      "status": "candidate",
+      "registered_at": "2026-11-26T18:11:07Z"
+    },
+    "7": {
+      "version": 7,
+      "architecture": "MultiTaskTransformer",
+      "checkpoint_path": "models/checkpoints/EXP-04_MultiTaskTransformer_best.pth",
+      "metrics": {
+        "mae": 58.99,
+        "rmse": 70.1613,
+        "nasa_score": 92894.29,
+        "loss": 106.1829,
+        "stage_accuracy": 0.56,
+        "stage_macro_f1": 0.2785,
+        "picp_80": 0.03,
+        "mpiw_80": 3.8405
+      },
+      "hyperparameters": {
+        "exp_id": "EXP-04",
+        "architecture": "MultiTaskTransformer",
+        "dataset": "FD001",
+        "window_size": 30,
+        "batch_size": 256,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0005,
+        "epochs": 1,
+        "feature_dim": 15
+      },
+      "status": "candidate",
+      "registered_at": "2026-11-26T18:16:38Z"
     }
   },
   "aliases": {
-    "latest": 5,
+    "latest": 7,
     "champion": 5
   }
 }

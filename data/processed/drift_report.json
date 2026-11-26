@@ -1,0 +1,166 @@
+{
+  "timestamp": "2026-11-26T18:13:51Z",
+  "dataset_drift_detected": true,
+  "drift_share": 1.0,
+  "drifted_features_count": 14,
+  "total_monitored_features": 14,
+  "p_value_threshold": 0.05,
+  "alert_status": "CRITICAL_DRIFT_ALERT",
+  "recommended_action": "TRIGGER_CONTINUOUS_RETRAINING: Severe data distribution shift detected across sensor fleet.",
+  "features": {
+    "sensor_2": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.1794,
+      "wasserstein_distance": 0.2059,
+      "reference_mean": 642.68,
+      "current_mean": 642.48,
+      "mean_shift_pct": 0.03,
+      "reference_std": 0.5,
+      "current_std": 0.4
+    },
+    "sensor_3": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.1678,
+      "wasserstein_distance": 2.4239,
+      "reference_mean": 1590.52,
+      "current_mean": 1588.1,
+      "mean_shift_pct": 0.15,
+      "reference_std": 6.13,
+      "current_std": 5.0
+    },
+    "sensor_4": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.2106,
+      "wasserstein_distance": 4.1986,
+      "reference_mean": 1408.93,
+      "current_mean": 1404.74,
+      "mean_shift_pct": 0.3,
+      "reference_std": 9.0,
+      "current_std": 6.69
+    },
+    "sensor_7": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.1948,
+      "wasserstein_distance": 0.3898,
+      "reference_mean": 553.37,
+      "current_mean": 553.76,
+      "mean_shift_pct": 0.07,
+      "reference_std": 0.89,
+      "current_std": 0.68
+    },
+    "sensor_8": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.1563,
+      "wasserstein_distance": 0.0257,
+      "reference_mean": 2388.1,
+      "current_mean": 2388.07,
+      "mean_shift_pct": 0.0,
+      "reference_std": 0.07,
+      "current_std": 0.06
+    },
+    "sensor_9": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.1353,
+      "wasserstein_distance": 6.9669,
+      "reference_mean": 9065.24,
+      "current_mean": 9058.41,
+      "mean_shift_pct": 0.08,
+      "reference_std": 22.08,
+      "current_std": 11.44
+    },
+    "sensor_11": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.2108,
+      "wasserstein_distance": 0.125,
+      "reference_mean": 47.54,
+      "current_mean": 47.42,
+      "mean_shift_pct": 0.26,
+      "reference_std": 0.27,
+      "current_std": 0.2
+    },
+    "sensor_12": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.1994,
+      "wasserstein_distance": 0.3343,
+      "reference_mean": 521.41,
+      "current_mean": 521.75,
+      "mean_shift_pct": 0.06,
+      "reference_std": 0.74,
+      "current_std": 0.56
+    },
+    "sensor_13": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.1564,
+      "wasserstein_distance": 0.0251,
+      "reference_mean": 2388.1,
+      "current_mean": 2388.07,
+      "mean_shift_pct": 0.0,
+      "reference_std": 0.07,
+      "current_std": 0.06
+    },
+    "sensor_14": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.1156,
+      "wasserstein_distance": 5.3851,
+      "reference_mean": 8143.75,
+      "current_mean": 8138.95,
+      "mean_shift_pct": 0.06,
+      "reference_std": 19.08,
+      "current_std": 10.19
+    },
+    "sensor_15": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.1942,
+      "wasserstein_distance": 0.0163,
+      "reference_mean": 8.44,
+      "current_mean": 8.43,
+      "mean_shift_pct": 0.19,
+      "reference_std": 0.04,
+      "current_std": 0.03
+    },
+    "sensor_17": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.1811,
+      "wasserstein_distance": 0.6391,
+      "reference_mean": 393.21,
+      "current_mean": 392.57,
+      "mean_shift_pct": 0.16,
+      "reference_std": 1.55,
+      "current_std": 1.23
+    },
+    "sensor_20": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.1847,
+      "wasserstein_distance": 0.0762,
+      "reference_mean": 38.82,
+      "current_mean": 38.89,
+      "mean_shift_pct": 0.2,
+      "reference_std": 0.18,
+      "current_std": 0.14
+    },
+    "sensor_21": {
+      "drift_detected": true,
+      "p_value": 0.0,
+      "ks_statistic": 0.1934,
+      "wasserstein_distance": 0.046,
+      "reference_mean": 23.29,
+      "current_mean": 23.34,
+      "mean_shift_pct": 0.2,
+      "reference_std": 0.11,
+      "current_std": 0.08
+    }
+  }
+}

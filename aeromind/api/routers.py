@@ -229,3 +229,14 @@ def system_health():
         model_status=champ["status"] if champ else "UNAVAILABLE",
     )
 
+
+@router.get("/monitoring/drift")
+def get_sensor_drift_report(dataset: str = "FD001"):
+    """Evaluates sensor telemetry distribution drift (Kolmogorov-Smirnov & Wasserstein)."""
+    try:
+        from aeromind.monitoring.drift_detector import run_drift_analysis
+        return run_drift_analysis(dataset_name=dataset)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
